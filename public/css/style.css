@@ -1,0 +1,46 @@
+body {
+  background: white;
+  color: #333;
+}
+
+html, button, input, select, textarea {
+  font-family: Helvetica;
+}
+
+.container {
+  width: 984px;
+  margin: 0 auto;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+ul.nav {
+  float: left;
+  margin-top: 700px;
+  list-style: none;
+}
+
+ul.nav li {
+  
+}
+
+ul.nav li a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
