@@ -1,5 +1,4 @@
 body {
-  background: white;
   color: #333;
 }
 
@@ -8,8 +7,117 @@ html, button, input, select, textarea {
 }
 
 .container {
-  width: 984px;
+  width: 1100px;
   margin: 0 auto;
+  position: relative;
+}
+.top {
+  background: url('/img/background.png');
+  height: 745px;
+  margin-bottom: -20px;
+  box-shadow: 0 0 10px #888888;
+}
+.bottom {
+  background-image: linear-gradient(bottom, rgb(200,200,200) 94%, rgb(160,160,160));
+  background-image: -o-linear-gradient(bottom, rgb(200,200,200) 94%, rgb(160,160,160));
+  background-image: -moz-linear-gradient(bottom, rgb(200,200,200) 94%, rgb(160,160,160));
+  background-image: -webkit-linear-gradient(bottom, rgb(200,200,200) 94%, rgb(160,160,160));
+  background-image: -ms-linear-gradient(bottom, rgb(200,200,200) 94%, rgb(160,160,160));
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.94, rgb(200,200,200)),
+    color-stop(rgb(160,160,160))
+  );
+  height: 185px;
+}
+
+.logo {
+  position: absolute;
+  top: 65px;
+  left: 10px;
+  width: 300px;
+}
+
+.model {
+  position: absolute;
+  right: 125px;
+  top: 40px;
+  height: 870px;
+}
+
+.title {
+  font-family: Garamond;
+  font-size: 36px;
+  margin: 0;
+  float: left;
+  letter-spacing: 25px;
+}
+
+.collection {
+  float: left;
+  padding-top: 120px;
+}
+
+.collection .title {
+  
+}
+
+.collection-name {
+  float: right;
+  margin-right: -45px;
+  padding-top: 100px;
+}
+
+.collection-name .title {
+  float:right;
+  letter-spacing: 10px;
+  color: rgb(160, 41, 35);
+
+}
+
+.gallery {
+  width: 100%;
+  height: 1140px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.gallery .dresses {
+  margin: 0 auto;
+  padding: 10px 0;
+  height: 200px;
+  width: 1680px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.gallery .dresses ul  {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  width: 5000px;
+}
+
+.gallery .dresses ul li {
+  float: left;
+}
+
+.gallery .container {
+  margin-top: 40px;
+}
+.gallery .center img, .gallery .left img, .gallery .right img {
+  float: left;
+  margin-right: 15px;
+}
+.gallery .side {
+  margin-top: 250px;
+}
+
+.gallery .arrow {
+  margin-top: 400px;
 }
 
 h1 {
@@ -30,17 +138,16 @@ p {
 
 ul.nav {
   float: left;
-  margin-top: 700px;
+  margin-top: 490px;
   list-style: none;
-}
-
-ul.nav li {
-  
+  padding: 0;
 }
 
 ul.nav li a {
   color: #333;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
 }
