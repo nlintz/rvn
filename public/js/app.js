@@ -259,7 +259,7 @@ var products = [
     original: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/original/36.jpg'
   }
 ];
-var current_product = 20;
+var current_product = 3;
 $(document).ready(function () {
   
   var thumb = function (small, num) { return "<li><img src='" + small + "'' data-num='" + num + "'/></li>"; };
