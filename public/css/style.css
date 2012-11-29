@@ -119,6 +119,13 @@ html, button, input, select, textarea {
   float: left;
   margin-right: 15px;
 }
+
+.gallery .center span {
+  position: absolute;
+  top: 480px;
+  left: 330px;
+  max-width: 120px;
+}
 .gallery .side {
   margin-top: 250px;
 }

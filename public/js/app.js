@@ -216,21 +216,42 @@ var products = [
     large: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/large/36.jpg'
   }
 ];
-
+var current_product = 15;
 $(document).ready(function () {
-  var thumb = function (small) { return "<li><img src='" + small + "'/></li>"; };
-  for (var product in products) {
-    $('.dresses ul').append(thumb(products[product].small));
-  }
-  var current_product = 15;
-  $('.r_arrow, .right').click(function (event) {
+  
+  var thumb = function (small, num) { return "<li><img src='" + small + "'' data-num='" + num + "'/></li>"; };
+  
+  var shift = function (num) {
+      $('.center img').attr('src', products[num].large);
+      $('.center span').html(products[num].name);
+    if(num > 0 && (num < products.length - 1)) {
+      $('.left img.side').attr('src', products[num - 1].medium);
+      $('.right img.side').attr('src', products[num + 1].medium);
+    }
+  };
 
+  for (var product in products) {
+    $('.dresses ul').append(thumb(products[product].small, product));
+  }
+
+  shift(current_product);
+  
+
+  $('.right .arrow, .right .side').click(function (event) {
+    current_product+=1;
+    console.log(current_product);
+    shift(current_product);
   });
 
-  $('.l_arrow .left').click(function (event) {
-    var old_middle = $('.center img').attr('src');
-    var old_left = $('.left img.side').attr('src');
-    var old_right = $('.right img.side').attr('src');
+  $('.left .arrow, .left .side').click(function (event) {
+    current_product-=1;
+    console.log(current_product);
+    shift(current_product);
+  });
+
+  $('.dresses ul li img').click(function (e) {
+    current_product = $(this).data('num');
+    shift(current_product);
   });
 
 });
