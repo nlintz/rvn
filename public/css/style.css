@@ -72,7 +72,7 @@ html, button, input, select, textarea {
 
 .collection-name {
   float: right;
-  margin-right: -45px;
+  margin-right: -84px;
   padding-top: 100px;
 }
 
@@ -94,7 +94,8 @@ html, button, input, select, textarea {
   margin: 0 auto;
   padding: 10px 0;
   height: 200px;
-  width: 1680px;
+  width:100%;
+  /*max-width: 1680px;*/
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -108,6 +109,7 @@ html, button, input, select, textarea {
 
 .gallery .dresses ul li {
   float: left;
+  margin-right: 10px;
 }
 
 .gallery .container {
