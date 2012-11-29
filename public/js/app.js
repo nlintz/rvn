@@ -141,9 +141,9 @@ var products = [
   },
   {
     name :'Ocelot Jacquard Tank Flared Dress',
-    small: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/small/10.jpg',
-    medium: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/medium/10.jpg',
-    large: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/large/10.jpg',
+    small: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/small/20.jpg',
+    medium: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/medium/20.jpg',
+    large: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/large/20.jpg',
     original: 'http://d3phq4e9hcpjua.cloudfront.net/rvn/original/20.jpg'
   },
   {
