@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Copperplate Gothic Bold;
+  src: url('/fnts/copgothe.ttf');
+}
+
 body {
   color: #333;
 }
@@ -49,7 +54,7 @@ html, button, input, select, textarea {
 }
 
 .title {
-  font-family: Garamond;
+  font-family: Copperplate Gothic Bold, sans-serif;
   font-size: 36px;
   margin: 0;
   float: left;
